@@ -1,0 +1,131 @@
+/* Resetowanie marginesów i paddingów */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ogólny wygląd strony */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5dc; /* beżowe tło */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Sekcja o mnie */
+.about {
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Tekst w sekcji o mnie */
+.about-text {
+  flex: 2;
+}
+
+/* Zdjęcie w sekcji o mnie */
+.about-photo {
+  flex: 1;
+  max-width: 250px;
+}
+
+.about-photo img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Sekcja umiejętności */
+.skills {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px auto;
+  width: 80%;
+  max-width: 900px;
+}
+
+.skill {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1;
+  transition: transform 0.3s ease;
+}
+
+.skill:hover {
+  transform: scale(1.05);
+}
+
+/* Sekcja przycisków pod 'o mnie' */
+.links {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.links a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+}
+
+.links a img {
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+/* Footer zawsze na dole */
+footer {
+  margin-top: auto;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Nawigacja (burger menu) */
+nav {
+  background: #333;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Flagi językowe */
+.lang-switch {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.lang-switch img {
+  width: 30px;
+  margin-left: 5px;
+  cursor: pointer;
+}
