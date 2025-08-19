@@ -1,190 +1,112 @@
-/* Resetowanie marginesów i paddingów */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Ogólny wygląd strony */
+/* Reset i ogólny styl */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f5f5dc; /* beżowe tło */
-  color: #333;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  background-color: #f5f0e6; /* Beżowe tło */
+  color: #333;
+}
+
+/* Menu burger */
+nav {
+  background-color: #d9c8b4;
+  padding: 10px;
+  position: relative;
+}
+
+.burger {
+  font-size: 28px;
+  cursor: pointer;
+  color: #333;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  flex-direction: column;
+}
+
+.menu li {
+  margin: 10px 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+}
+
+.menu.active {
+  display: flex;
 }
 
 /* Sekcja o mnie */
-.about {
-  background-color: rgba(255, 255, 255, 0.9);
-  margin: 20px auto;
+.section {
+  background-color: #e8dfd3; /* jaśniejszy beż zamiast bieli */
+  margin: 20px;
   padding: 20px;
   border-radius: 10px;
-  width: 80%;
-  max-width: 900px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 20px;
 }
 
-/* Tekst w sekcji o mnie */
-.about-text {
-  flex: 2;
-}
-
-/* Zdjęcie w sekcji o mnie */
-.about-photo {
-  flex: 1;
-  max-width: 250px;
-}
-
-.about-photo img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-/* Sekcja umiejętności */
-.skills {
+/* Skróty do CV i Portfolio */
+.shortcuts {
   display: flex;
   justify-content: center;
   gap: 20px;
-  margin: 30px auto;
-  width: 80%;
-  max-width: 900px;
+  margin: 20px;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #d9c8b4;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Sekcja kompetencji */
+.skills {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
 }
 
 .skill {
-  background: white;
+  background-color: #e8dfd3;
   padding: 15px;
   border-radius: 10px;
+  width: 30%;
+  min-width: 250px;
   text-align: center;
-  flex: 1;
-  transition: transform 0.3s ease;
+  transition: transform 0.2s;
 }
 
 .skill:hover {
   transform: scale(1.05);
 }
 
-/* Sekcja przycisków pod 'o mnie' */
-.links {
-  text-align: center;
-  margin: 20px auto;
-}
-
-.links a {
-  display: inline-block;
-  margin: 10px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  background-color: #333;
-  color: white;
-  text-decoration: none;
-}
-
-.links a img {
-  height: 20px;
-  vertical-align: middle;
-  margin-right: 8px;
-}
-
 /* Footer zawsze na dole */
 footer {
   margin-top: auto;
-  background-color: #333;
-  color: white;
+  background-color: #d9c8b4;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
 }
 
-/* Nawigacja (burger menu) */
-nav {
-  background: #333;
-  padding: 10px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-/* Flagi językowe */
-.lang-switch {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
-.lang-switch img {
-  width: 30px;
-  margin-left: 5px;
-  cursor: pointer;
-}
-/* ----------------------------- */
-/* Nawigacja / burger menu       */
-/* ----------------------------- */
-.navbar {
-  position: relative;
-  background: #333;
-  padding: 10px;
-}
-
-.burger {
-  font-size: 24px;
-  color: white;
-  cursor: pointer;
-  display: block;
-}
-
-.menu {
-  display: none;
-  flex-direction: column;
-  background: #444;
-  margin-top: 10px;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.menu li {
-  list-style: none;
-  margin: 10px 0;
-}
-
-.menu a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-.menu a:hover {
-  text-decoration: underline;
-}
-
-/* 🔽 Na komputerach menu ma być normalnie widoczne w poziomie */
-@media (min-width: 768px) {
-  .burger {
-    display: none;
+/* Mobilne wyświetlanie */
+@media (max-width: 768px) {
+  .skills {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .menu {
-    display: flex !important;
-    flex-direction: row;
-    justify-content: center;
-    background: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .menu li {
-    margin: 0 15px;
+  .shortcuts {
+    flex-direction: column;
   }
 }
