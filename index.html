@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Marcin Cieślak</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5dc; /* Beżowe tło */
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+    }
+    header .logo {
+      height: 50px;
+    }
+    .lang-switch img {
+      height: 20px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    .about {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: white;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 8px;
+      width: 80%;
+      max-width: 900px;
+    }
+    .about img {
+      max-width: 250px;
+      border-radius: 8px;
+      margin-left: 20px;
+    }
+    .skills {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px auto;
+      width: 80%;
+      max-width: 900px;
+    }
+    .skill {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      width: 28%;
+      transition: transform 0.3s ease;
+    }
+    .skill:hover {
+      transform: scale(1.05);
+    }
+    .links {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .links a {
+      margin: 0 10px;
+      padding: 10px 15px;
+      background: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #333;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <!-- 🔽 Podmień logo swojej strony -->
+  <img src="images/logo.png" alt="Logo" class="logo">
+
+  <!-- 🔽 Flagi językowe -->
+  <div class="lang-switch">
+    <a href="index.html"><img src="images/pl.png" alt="PL"></a>
+    <a href="index_en.html"><img src="images/en.png" alt="EN"></a>
+  </div>
+</header>
+
+<section class="about">
+  <div>
+    <h2>O mnie</h2>
+    <p><!-- 🔽 Tutaj wpisz swój opis w języku polskim -->
+      Jestem logistykiem i analitykiem danych, interesuję się SQL, Power BI i sztuczną inteligencją.
+    </p>
+  </div>
+  <!-- 🔽 Podmień swoje zdjęcie -->
+  <img src="images/photo.jpg" alt="Moje zdjęcie">
+</section>
+
+<section class="skills">
+  <div class="skill">🎨 Kreatywność <p>Uwielbiam tworzyć nowe rozwiązania.</p></div>
+  <div class="skill">📊 Analiza <p>Dokładnie analizuję dane i procesy.</p></div>
+  <div class="skill">🤝 Współpraca <p>Pracuję skutecznie w zespole.</p></div>
+</section>
+
+<section class="links">
+  <!-- 🔽 Podmień link do CV -->
+  <a href="cv.pdf" target="_blank">📄 CV</a>
+  
+  <!-- 🔽 Podmień link do portfolio Power BI -->
+  <a href="portfolio.html" target="_blank">📊 Portfolio Power BI 
+    <img src="images/powerbi.png" alt="Power BI logo" style="height:18px; vertical-align:middle;">
+  </a>
+</section>
+
+<footer>
+  <!-- 🔽 Podmień mail i LinkedIn -->
+  <p>
+    <a href="mailto:twojemail@domena.com">✉️ Wyślij maila</a> | 
+    <a href="https://www.linkedin.com/in/twojprofil" target="_blank">LinkedIn</a>
+  </p>
+</footer>
+
+</body>
+</html>
