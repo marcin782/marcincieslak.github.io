@@ -4,85 +4,66 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CV - Marcin Cieślak</title>
-
+  
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  
   <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Header with flags -->
+  <!-- Title -->
+  <div id="title">Marcin Cieślak</div>
+
+  <!-- Header -->
   <header>
     <div class="flags">
-      <a href="cv.html">
-        <img src="images/pl.png" alt="Polski" />
-      </a>
-      <a href="cv_en.html">
-        <img src="images/uk.png" alt="English" />
-      </a>
+      <a href="index.html"><img src="images/pl.png" alt="Polski" /></a>
+      <a href="index_en.html"><img src="images/uk.png" alt="English" /></a>
     </div>
+
+    <!-- Burger menu -->
+    <nav class="burger-menu">
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <ul class="menu">
+        <li><a href="index_en.html#about">About me</a></li>
+        <li><a href="cv_en.html">CV</a></li>
+        <li><a href="index_en.html#portfolio">Power BI Portfolio</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- CV Container -->
-  <main class="cv-container">
-    
-    <!-- Photo -->
-    <section class="cv-section photo">
-      <h2><i class="fas fa-user-circle"></i> Profile</h2>
-      <img src="images/photo.jpg" alt="My photo" class="profile-pic" />
-      <p>Hello! My name is Marcin Cieślak. I am a logistics professional with growing expertise in data analysis, SQL, and Power BI.</p>
+  <!-- CV content -->
+  <main class="cv-content">
+    <section>
+      <h2>Work Experience</h2>
+      <p>Logistics professional with experience in process analysis and supply chain improvement.</p>
     </section>
 
-    <!-- Career Path -->
-    <section class="cv-section career">
-      <h2><i class="fas fa-briefcase"></i> Career Path</h2>
+    <section>
+      <h2>Skills</h2>
       <ul>
-        <li><strong>2023–present</strong> – Logistics Analyst, Company X</li>
-        <li><strong>2020–2023</strong> – Logistics Coordinator, Company Y</li>
-        <li><strong>2017–2020</strong> – Junior Logistics Specialist, Company Z</li>
+        <li>SQL and databases</li>
+        <li>Power BI – data modeling and visualization</li>
+        <li>Logistics process analysis</li>
       </ul>
     </section>
 
-    <!-- Education -->
-    <section class="cv-section education">
-      <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-      <ul>
-        <li><strong>2013–2016</strong> – University of Logistics, Bachelor's Degree</li>
-        <li><strong>2016–2018</strong> – University of Economics, Master's Degree</li>
-      </ul>
-    </section>
-
-    <!-- Certificates -->
-    <section class="cv-section certificates">
-      <h2><i class="fas fa-certificate"></i> Certificates</h2>
-      <ul>
-        <li>Coursera – Data Modeling with Power BI: Advanced DAX Calculations (2025)</li>
-        <li>Santander Open Academy – Power BI (2025)</li>
-        <li>Lean Six Sigma Green Belt (2024)</li>
-      </ul>
-    </section>
-
-    <!-- Interests -->
-    <section class="cv-section interests">
-      <h2><i class="fas fa-heart"></i> Interests</h2>
-      <p>
-        In my free time I explore data visualization, experiment with AI tools, 
-        and stay active through cycling and hiking.
-      </p>
-    </section>
-
-    <!-- Contact -->
-    <section class="cv-section contact">
-      <h2><i class="fas fa-envelope"></i> Contact</h2>
-      <p>Email: <a href="mailto:kontakt@marcincieslak.pl">kontakt@marcincieslak.pl</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/marcin-cieslak/" target="_blank">linkedin.com/in/marcin-cieslak</a></p>
+    <section>
+      <h2>Education</h2>
+      <p>Higher education in logistics.</p>
     </section>
   </main>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Marcin Cieślak | <a href="index_en.html"><i class="fas fa-home"></i> Back to portfolio</a></p>
+    <p>
+      <a href="mailto:kontakt@marcincieslak.pl">✉️ Send email</a> | 
+      <a href="https://www.linkedin.com/in/marcin-cieslak/" target="_blank">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+    </p>
   </footer>
 </body>
 </html>
