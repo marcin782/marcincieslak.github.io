@@ -1,63 +1,114 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Marcin Cieślak</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Marcin Cieślak</title>
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- 🔽 Menu Burger -->
-  <nav>
-    <div class="burger" onclick="toggleMenu()">☰</div>
-    <ul class="menu">
-      <li><a href="#o-mnie">O mnie</a></li>
-      <li><a href="cv.html">CV</a></li>
-      <li><a href="portfolio.html">Portfolio Power BI</a></li>
-    </ul>
-  </nav>
+  <!-- Header -->
+  <header>
+    <!-- Flagi językowe -->
+    <div class="flags">
+      <a href="index.html">
+        <img src="images/pl.png" alt="Polski" />
+      </a>
+      <a href="index_en.html">
+        <img src="images/uk.png" alt="English" />
+      </a>
+    </div>
 
-  <!-- 🔽 Sekcja O mnie -->
-  <section id="o-mnie" class="section">
-    <h1>O mnie</h1>
-    <p>Cześć! Jestem Marcin, interesuję się SQL, Power BI i sztuczną inteligencją. 🚀</p>
+    <!-- Burger Menu -->
+    <nav class="burger-menu">
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <ul class="menu">
+        <li><a href="#about">O mnie</a></li>
+        <li><a href="#communication">Komunikatywność</a></li>
+        <li><a href="#teamwork">Współpraca</a></li>
+        <li><a href="#creativity">Kreatywność</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#portfolio">Portfolio Power BI</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sekcja: O mnie -->
+  <section id="about">
+    <h1><i class="fas fa-user"></i> O mnie</h1>
+    <p>
+      Jestem logistykiem z rosnącą pasją do analizy danych, Power BI i SQL. 
+      Łączę doświadczenie operacyjne z umiejętnościami analitycznymi, aby odkrywać 
+      nowe perspektywy i wspierać podejmowanie decyzji opartych na danych.
+    </p>
   </section>
 
-  <!-- 🔽 Skróty do CV i Portfolio -->
-  <section class="shortcuts">
-    <a href="cv.html" class="btn">📄 CV</a>
-    <a href="portfolio.html" class="btn">📊 Portfolio Power BI</a>
+  <!-- Sekcja: Komunikatywność -->
+  <section id="communication">
+    <h1><i class="fas fa-comments"></i> Komunikatywność</h1>
+    <p>
+      Potrafię jasno i skutecznie przekazywać informacje – zarówno wewnątrz zespołu, 
+      jak i przy prezentacji wyników analitycznych. Dostosowuję sposób komunikacji 
+      do odbiorcy: od prostych raportów dla menedżerów po szczegółowe wyjaśnienia 
+      dla specjalistów technicznych.
+    </p>
   </section>
 
-  <!-- 🔽 Sekcja kompetencji -->
-  <section class="skills">
-    <div class="skill">
-      <h2>🎨 Kreatywność</h2>
-      <p>Umiejętność tworzenia nowych rozwiązań i nieszablonowego podejścia do problemów.</p>
-    </div>
-    <div class="skill">
-      <h2>📊 Analiza</h2>
-      <p>Doświadczenie w analizie danych, SQL i Power BI, wyciąganie wniosków biznesowych.</p>
-    </div>
-    <div class="skill">
-      <h2>🤝 Współpraca</h2>
-      <p>Praca zespołowa, dzielenie się wiedzą i wspólne rozwiązywanie wyzwań.</p>
-    </div>
+  <!-- Sekcja: Współpraca -->
+  <section id="teamwork">
+    <h1><i class="fas fa-users"></i> Współpraca</h1>
+    <p>
+      Współpraca to dla mnie coś więcej niż podział obowiązków – to wspólne dążenie 
+      do realizacji celów. Mam doświadczenie w koordynowaniu projektów między 
+      działami logistyki, sprzedaży i IT, zawsze stawiając na otwartość i 
+      dzielenie się wiedzą.
+    </p>
   </section>
 
-  <!-- 🔽 Footer -->
+  <!-- Sekcja: Kreatywność -->
+  <section id="creativity">
+    <h1><i class="fas fa-lightbulb"></i> Kreatywność</h1>
+    <p>
+      Do wyzwań podchodzę nieszablonowo, szukając innowacyjnych rozwiązań. 
+      W pracy z danymi korzystam z analizy SQL i wizualizacji w Power BI, 
+      aby odkrywać zależności i przedstawiać je w atrakcyjny, przejrzysty sposób.
+    </p>
+  </section>
+
+  <!-- Sekcja: CV -->
+  <section id="cv">
+    <h1><i class="fas fa-file-alt"></i> CV</h1>
+    <p>
+      <a href="files/CV_Marcin_Cieslak.pdf" target="_blank">📄 Pobierz moje CV</a>
+    </p>
+  </section>
+
+  <!-- Sekcja: Portfolio Power BI -->
+  <section id="portfolio">
+    <h1><i class="fas fa-chart-bar"></i> Portfolio Power BI</h1>
+    <p>
+      Zobacz moje projekty w Power BI, w których dane zamieniam na biznesowe 
+      wnioski.  
+      <a href="https://app.powerbi.com/" target="_blank">🔗 Zajrzyj do mojego portfolio</a>
+    </p>
+  </section>
+
+  <!-- Footer -->
   <footer>
     <p>
-      <a href="mailto:kontakt@marcincieslak.pl">✉️ kontakt@marcincieslak.pl</a> | 
-      <a href="https://www.linkedin.com/in/marcin-cieslak/" target="_blank">LinkedIn</a>
+      <a href="mailto:kontakt@marcincieslak.pl">✉️ Wyślij mail</a> | 
+      <a href="https://www.linkedin.com/in/marcin-cieslak/" target="_blank">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
     </p>
   </footer>
-
-  <script>
-    function toggleMenu() {
-      const menu = document.querySelector(".menu");
-      menu.classList.toggle("active");
-    }
-  </script>
 </body>
 </html>
