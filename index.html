@@ -4,42 +4,44 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio - Marcin Cieślak</title>
-  
+
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Pasek tytułu -->
-  <div id="title">Marcin Cieślak</div>
+  <!-- Pasek tytułu = kolor jak footer -->
+  <div id="title" style="background:#d9c8aa; color:#000; text-align:center; padding:20px 0; font-weight:700;">
+    Marcin Cieślak
+  </div>
 
-  <!-- Header with flags -->
+  <!-- Header z flagami i burgerem -->
   <header>
     <div class="flags">
-      <a href="index.html">
-        <img src="images/pl.png" alt="Polski" />
-      </a>
-      <a href="index_en.html">
-        <img src="images/uk.png" alt="English" />
-      </a>
+      <a href="index.html"><img src="images/pl.png" alt="Polski" /></a>
+      <a href="index_en.html"><img src="images/uk.png" alt="English" /></a>
     </div>
 
-    <!-- Burger Menu -->
+    <!-- Burger: ikona nie znika -->
     <nav class="burger-menu">
       <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <label for="menu-toggle" class="menu-icon" style="display:inline-block !important; cursor:pointer;">
+        <i class="fas fa-bars"></i>
+      </label>
       <ul class="menu">
         <li><a href="#about">O mnie</a></li>
-        <li><a href="#cv">CV</a></li>
+        <li><a href="cv.html">CV</a></li>
         <li><a href="#portfolio">Portfolio Power BI</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- O mnie -->
-  <section id="about">
+  <!-- O mnie nieco niżej -->
+  <section id="about" style="margin-top:16px;">
     <h1>O mnie</h1>
     <p>
       Jestem logistykiem z rosnącą pasją do analizy danych, Power BI i SQL.
@@ -48,44 +50,47 @@
     </p>
   </section>
 
-  <!-- Umiejętności poziome -->
+  <!-- Trzy sekcje w jednym rzędzie -->
   <section id="skills">
-    <div class="skill"><i class="fas fa-comments"></i> Komunikatywność</div>
-    <div class="skill"><i class="fas fa-users"></i> Współpraca</div>
-    <div class="skill"><i class="fas fa-lightbulb"></i> Kreatywność</div>
+    <div class="skills-container" style="display:flex; gap:16px; justify-content:space-between; align-items:stretch; flex-wrap:wrap;">
+      <div class="skill" style="flex:1; min-width:220px; text-align:center;">
+        <h3><i class="fas fa-comments"></i> Komunikatywność</h3>
+        <p>Jasny przekaz dopasowany do odbiorcy. Briefy dla zarządu i szczegóły dla zespołów.</p>
+      </div>
+      <div class="skill" style="flex:1; min-width:220px; text-align:center;">
+        <h3><i class="fas fa-users"></i> Współpraca</h3>
+        <p>Praca zespołowa, dzielenie się wiedzą, koordynacja z logistyką, sprzedażą i IT.</p>
+      </div>
+      <div class="skill" style="flex:1; min-width:220px; text-align:center;">
+        <h3><i class="fas fa-lightbulb"></i> Kreatywność</h3>
+        <p>Nieszablonowe podejście do problemów. Rozwiązania oparte na danych.</p>
+      </div>
+    </div>
   </section>
 
-  <!-- CV + Portfolio -->
+  <!-- CV i Portfolio obok siebie -->
   <section id="actions">
-    <a href="cv.html" class="btn"><i class="fas fa-file-alt"></i> CV</a>
-    <a href="#portfolio" class="btn"><i class="fas fa-chart-bar"></i> Portfolio Power BI</a>
-  </section>
-
-  <!-- CV -->
-  <section id="cv">
-    <h1><i class="fas fa-file-alt"></i> CV</h1>
-    <p>
-      <a href="files/CV_Marcin_Cieslak.pdf" target="_blank">📄 Pobierz moje CV</a>
-    </p>
-  </section>
-
-  <!-- Portfolio -->
-  <section id="portfolio">
-    <h1><i class="fas fa-chart-bar"></i> Portfolio Power BI</h1>
-    <p>
-      Sprawdź moje dashboardy i projekty w Power BI, gdzie zamieniam dane na
-      użyteczne wnioski.  
-      <a href="https://app.powerbi.com/" target="_blank">🔗 Zobacz moją pracę w Power BI</a>
-    </p>
+    <div class="cv-portfolio-container" style="display:flex; gap:24px; justify-content:space-between; align-items:stretch; flex-wrap:wrap;">
+      <div class="cv-box" style="flex:1; min-width:260px; text-align:center;">
+        <h2><i class="fas fa-file-alt"></i> CV</h2>
+        <p><a href="cv.html" class="btn">📄 Zobacz moje CV</a></p>
+      </div>
+      <div class="portfolio-box" id="portfolio" style="flex:1; min-width:260px; text-align:center;">
+        <h2><i class="fas fa-chart-bar"></i> Portfolio Power BI</h2>
+        <p>
+          Dashboardy i projekty zamieniające dane w decyzje.
+          <br />
+          <a href="https://app.powerbi.com/" target="_blank" class="btn">🔗 Zobacz projekty</a>
+        </p>
+      </div>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer>
     <p>
-      <a href="mailto:kontakt@marcincieslak.pl">✉️ Wyślij e-mail</a> | 
-      <a href="https://www.linkedin.com/in/marcin-cieslak/" target="_blank">
-        <i class="fab fa-linkedin"></i> LinkedIn
-      </a>
+      <a href="mailto:kontakt@marcincieslak.pl">✉️ Wyślij e-mail</a> |
+      <a href="https://www.linkedin.com/in/marcin-cieslak/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
     </p>
   </footer>
 </body>
