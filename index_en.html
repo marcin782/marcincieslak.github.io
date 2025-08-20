@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Title Bar -->
+  <div id="title">Marcin Cieślak</div>
+
   <!-- Header with flags -->
   <header>
     <div class="flags">
@@ -29,10 +32,7 @@
       <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
       <ul class="menu">
         <li><a href="#about">About me</a></li>
-        <li><a href="#communication">Communication</a></li>
-        <li><a href="#teamwork">Teamwork</a></li>
-        <li><a href="#problemsolving">Problem Solving</a></li>
-        <li><a href="cv_en.html">CV</a></li>
+        <li><a href="#cv">CV</a></li>
         <li><a href="#portfolio">Power BI Portfolio</a></li>
       </ul>
     </nav>
@@ -48,44 +48,24 @@
     </p>
   </section>
 
-  <!-- Communication -->
-  <section id="communication">
-    <h1><i class="fas fa-comments"></i> Communication</h1>
-    <p>
-      I can clearly and effectively communicate information – both within teams 
-      and when presenting analytical results. I adapt my communication style to 
-      the audience: from simple reports for managers to detailed explanations 
-      for technical specialists.
-    </p>
+  <!-- Skills in a row -->
+  <section id="skills">
+    <div class="skill"><i class="fas fa-comments"></i> Communication</div>
+    <div class="skill"><i class="fas fa-users"></i> Teamwork</div>
+    <div class="skill"><i class="fas fa-lightbulb"></i> Creativity</div>
   </section>
 
-  <!-- Teamwork -->
-  <section id="teamwork">
-    <h1><i class="fas fa-users"></i> Teamwork</h1>
-    <p>
-      Teamwork for me means more than just dividing tasks – it’s about working 
-      together towards common goals. I have experience coordinating projects 
-      between logistics, sales, and IT departments, always focusing on 
-      collaboration and knowledge-sharing.
-    </p>
-  </section>
-
-  <!-- Problem Solving -->
-  <section id="problemsolving">
-    <h1><i class="fas fa-lightbulb"></i> Problem Solving</h1>
-    <p>
-      I believe in understanding the problem first, and then finding the right 
-      solution. Using SQL and Power BI, I analyze data to uncover hidden 
-      dependencies and propose improvements that solve issues and optimize 
-      processes in the long run.
-    </p>
+  <!-- CV + Portfolio -->
+  <section id="actions">
+    <a href="cv_en.html" class="btn"><i class="fas fa-file-alt"></i> CV</a>
+    <a href="#portfolio" class="btn"><i class="fas fa-chart-bar"></i> Power BI Portfolio</a>
   </section>
 
   <!-- CV -->
   <section id="cv">
     <h1><i class="fas fa-file-alt"></i> CV</h1>
     <p>
-      <a href="cv_en.html" class="btn"><i class="fas fa-file-alt"></i> View my CV</a>
+      <a href="files/CV_Marcin_Cieslak_EN.pdf" target="_blank">📄 Download my CV</a>
     </p>
   </section>
 
