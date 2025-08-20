@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Pasek tytułu -->
+  <div id="title">Marcin Cieślak</div>
+
   <!-- Header with flags -->
   <header>
     <div class="flags">
@@ -29,68 +32,57 @@
       <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
       <ul class="menu">
         <li><a href="#about">O mnie</a></li>
-        <li><a href="cv.html">CV</a></li>
+        <li><a href="#cv">CV</a></li>
         <li><a href="#portfolio">Portfolio Power BI</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Title -->
-  <section id="title">
-    <h1>Marcin Cieślak</h1>
-  </section>
-
-  <!-- About -->
+  <!-- O mnie -->
   <section id="about">
-    <h2>O mnie</h2>
+    <h1>O mnie</h1>
     <p>
-      Jestem logistykiem z pasją do analizy danych, Power BI oraz SQL. 
-      Łączę doświadczenie operacyjne z umiejętnościami analitycznymi, 
-      aby odkrywać zależności i usprawniać procesy.
+      Jestem logistykiem z rosnącą pasją do analizy danych, Power BI i SQL.
+      Łączę doświadczenie operacyjne z umiejętnościami analitycznymi, aby odkrywać
+      wnioski i usprawniać procesy.
     </p>
   </section>
 
-  <!-- Skills (3 columns) -->
+  <!-- Umiejętności poziome -->
   <section id="skills">
-    <div class="skills-container">
-      <div class="skill">
-        <h3><i class="fas fa-comments"></i> Komunikatywność</h3>
-        <p>Potrafię jasno przekazywać informacje i dostosować komunikację do odbiorcy.</p>
-      </div>
-      <div class="skill">
-        <h3><i class="fas fa-users"></i> Współpraca</h3>
-        <p>Wspólna praca nad celem to dla mnie podstawa – dzielę się wiedzą i wspieram zespół.</p>
-      </div>
-      <div class="skill">
-        <h3><i class="fas fa-lightbulb"></i> Kreatywność</h3>
-        <p>Szukam nieszablonowych rozwiązań problemów, opierając się na danych i analizach.</p>
-      </div>
-    </div>
+    <div class="skill"><i class="fas fa-comments"></i> Komunikatywność</div>
+    <div class="skill"><i class="fas fa-users"></i> Współpraca</div>
+    <div class="skill"><i class="fas fa-lightbulb"></i> Kreatywność</div>
   </section>
 
-  <!-- CV + Portfolio (side by side) -->
-  <section id="cv-portfolio">
-    <div class="cv-portfolio-container">
-      <div class="cv-box">
-        <h2><i class="fas fa-file-alt"></i> CV</h2>
-        <p>
-          <a href="cv.html" class="btn">📄 Zobacz moje CV</a>
-        </p>
-      </div>
-      <div class="portfolio-box" id="portfolio">
-        <h2><i class="fas fa-chart-bar"></i> Portfolio Power BI</h2>
-        <p>
-          Zobacz moje dashboardy i projekty, w których dane zamieniam w wiedzę biznesową.  
-          <a href="https://app.powerbi.com/" target="_blank" class="btn">🔗 Zobacz projekty</a>
-        </p>
-      </div>
-    </div>
+  <!-- CV + Portfolio -->
+  <section id="actions">
+    <a href="cv.html" class="btn"><i class="fas fa-file-alt"></i> CV</a>
+    <a href="#portfolio" class="btn"><i class="fas fa-chart-bar"></i> Portfolio Power BI</a>
+  </section>
+
+  <!-- CV -->
+  <section id="cv">
+    <h1><i class="fas fa-file-alt"></i> CV</h1>
+    <p>
+      <a href="files/CV_Marcin_Cieslak.pdf" target="_blank">📄 Pobierz moje CV</a>
+    </p>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio">
+    <h1><i class="fas fa-chart-bar"></i> Portfolio Power BI</h1>
+    <p>
+      Sprawdź moje dashboardy i projekty w Power BI, gdzie zamieniam dane na
+      użyteczne wnioski.  
+      <a href="https://app.powerbi.com/" target="_blank">🔗 Zobacz moją pracę w Power BI</a>
+    </p>
   </section>
 
   <!-- Footer -->
   <footer>
     <p>
-      <a href="mailto:kontakt@marcincieslak.pl">✉️ Wyślij email</a> | 
+      <a href="mailto:kontakt@marcincieslak.pl">✉️ Wyślij e-mail</a> | 
       <a href="https://www.linkedin.com/in/marcin-cieslak/" target="_blank">
         <i class="fab fa-linkedin"></i> LinkedIn
       </a>
