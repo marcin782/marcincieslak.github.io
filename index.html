@@ -1,97 +1,88 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio - Marcin Cieślak</title>
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcin Cieślak</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <!-- Pasek tytułu = kolor jak footer -->
-  <div id="title" style="background:#d9c8aa; color:#000; text-align:center; padding:20px 0; font-weight:700;">
-    Marcin Cieślak
-  </div>
 
-  <!-- Header z flagami i burgerem -->
+  <!-- Pasek tytułowy -->
+  <div id="title">Marcin Cieślak</div>
+
+  <!-- Header z burgerem i flagami -->
   <header>
     <div class="flags">
-      <a href="index.html"><img src="images/pl.png" alt="Polski" /></a>
-      <a href="index_en.html"><img src="images/uk.png" alt="English" /></a>
+      <a href="index.html"><img src="pl_flag.png" alt="PL"></a>
+      <a href="index_en.html"><img src="uk_flag.png" alt="EN"></a>
     </div>
-
-    <!-- Burger: ikona nie znika -->
     <nav class="burger-menu">
-      <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="menu-icon" style="display:inline-block !important; cursor:pointer;">
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">
         <i class="fas fa-bars"></i>
       </label>
       <ul class="menu">
-        <li><a href="#about">O mnie</a></li>
+        <li><a href="#o-mnie">O mnie</a></li>
         <li><a href="cv.html">CV</a></li>
         <li><a href="#portfolio">Portfolio Power BI</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- O mnie nieco niżej -->
-  <section id="about" style="margin-top:16px;">
-    <h1>O mnie</h1>
+  <!-- O mnie -->
+  <section id="o-mnie">
+    <h2>O mnie</h2>
     <p>
-      Jestem logistykiem z rosnącą pasją do analizy danych, Power BI i SQL.
-      Łączę doświadczenie operacyjne z umiejętnościami analitycznymi, aby odkrywać
-      wnioski i usprawniać procesy.
+      Cześć! Jestem Marcin Cieślak – logistyk z pasją do danych, analityki i narzędzi takich jak Power BI czy SQL. 
+      Lubię przekładać złożone procesy na proste i czytelne rozwiązania.
     </p>
   </section>
 
-  <!-- Trzy sekcje w jednym rzędzie -->
-  <section id="skills">
-    <div class="skills-container" style="display:flex; gap:16px; justify-content:space-between; align-items:stretch; flex-wrap:wrap;">
-      <div class="skill" style="flex:1; min-width:220px; text-align:center;">
-        <h3><i class="fas fa-comments"></i> Komunikatywność</h3>
-        <p>Jasny przekaz dopasowany do odbiorcy. Briefy dla zarządu i szczegóły dla zespołów.</p>
+  <!-- Sekcje umiejętności -->
+  <section>
+    <div class="skills-container">
+      <div class="skill">
+        <i class="fas fa-comments fa-2x"></i>
+        <h3>Komunikatywność</h3>
+        <p>Potrafię jasno przekazywać myśli i efektywnie prowadzić rozmowy w zespole.</p>
       </div>
-      <div class="skill" style="flex:1; min-width:220px; text-align:center;">
-        <h3><i class="fas fa-users"></i> Współpraca</h3>
-        <p>Praca zespołowa, dzielenie się wiedzą, koordynacja z logistyką, sprzedażą i IT.</p>
+      <div class="skill">
+        <i class="fas fa-users fa-2x"></i>
+        <h3>Współpraca</h3>
+        <p>Buduję dobre relacje i potrafię pracować w grupie nad wspólnym celem.</p>
       </div>
-      <div class="skill" style="flex:1; min-width:220px; text-align:center;">
-        <h3><i class="fas fa-lightbulb"></i> Kreatywność</h3>
-        <p>Nieszablonowe podejście do problemów. Rozwiązania oparte na danych.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- CV i Portfolio obok siebie -->
-  <section id="actions">
-    <div class="cv-portfolio-container" style="display:flex; gap:24px; justify-content:space-between; align-items:stretch; flex-wrap:wrap;">
-      <div class="cv-box" style="flex:1; min-width:260px; text-align:center;">
-        <h2><i class="fas fa-file-alt"></i> CV</h2>
-        <p><a href="cv.html" class="btn">📄 Zobacz moje CV</a></p>
-      </div>
-      <div class="portfolio-box" id="portfolio" style="flex:1; min-width:260px; text-align:center;">
-        <h2><i class="fas fa-chart-bar"></i> Portfolio Power BI</h2>
-        <p>
-          Dashboardy i projekty zamieniające dane w decyzje.
-          <br />
-          <a href="https://app.powerbi.com/" target="_blank" class="btn">🔗 Zobacz projekty</a>
-        </p>
+      <div class="skill">
+        <i class="fas fa-lightbulb fa-2x"></i>
+        <h3>Kreatywność</h3>
+        <p>Znajduję nieszablonowe rozwiązania i lubię łączyć różne perspektywy.</p>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- CV i Portfolio -->
+  <section>
+    <div class="cv-portfolio-container">
+      <div class="cv-box">
+        <i class="fas fa-id-card fa-2x"></i>
+        <h3>CV</h3>
+        <a href="cv.html" class="btn">Zobacz CV</a>
+      </div>
+      <div class="portfolio-box" id="portfolio">
+        <i class="fas fa-chart-bar fa-2x"></i>
+        <h3>Portfolio Power BI</h3>
+        <a href="https://app.powerbi.com/" target="_blank" class="btn">Zobacz Portfolio</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stopka -->
   <footer>
-    <p>
-      <a href="mailto:kontakt@marcincieslak.pl">✉️ Wyślij e-mail</a> |
-      <a href="https://www.linkedin.com/in/marcin-cieslak/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <p>&copy; 2025 Marcin Cieślak | 
+      <a href="mailto:twojmail@example.com"><i class="fas fa-envelope"></i> Kontakt</a>
     </p>
   </footer>
+
 </body>
 </html>
