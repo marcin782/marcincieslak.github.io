@@ -145,3 +145,107 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+/* ===== CV Layout ===== */
+
+/* Kontener CV z dwiema kolumnami */
+.cv-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Lewa kolumna (węższa) */
+.cv-left {
+  flex: 1;
+  min-width: 260px;
+  max-width: 300px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Zdjęcie profilowe */
+.cv-left .photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #d9c8aa;
+}
+
+/* Sekcje w lewej kolumnie */
+.cv-left section {
+  margin-bottom: 25px;
+}
+.cv-left h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+.cv-left ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.cv-left ul li {
+  margin-bottom: 8px;
+}
+
+/* Prawa kolumna (szersza) */
+.cv-right {
+  flex: 3;
+  min-width: 400px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+/* Nagłówki w prawej kolumnie */
+.cv-right h2 {
+  margin-top: 30px;
+  font-size: 1.4rem;
+  color: #333;
+  border-bottom: 2px solid #d9c8aa;
+  padding-bottom: 5px;
+}
+
+/* Doświadczenie / Edukacja */
+.experience {
+  margin-bottom: 20px;
+}
+.experience h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+.experience span {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #555;
+}
+.experience ul {
+  margin-top: 5px;
+  padding-left: 20px;
+}
+
+/* Certyfikaty */
+.cv-right ul {
+  padding-left: 20px;
+}
+
+/* Responsywność */
+@media (max-width: 900px) {
+  .cv-container {
+    flex-direction: column;
+  }
+  .cv-left, .cv-right {
+    max-width: 100%;
+  }
+}
