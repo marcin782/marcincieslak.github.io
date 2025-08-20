@@ -1,92 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio - Marcin Cieślak</title>
-  
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcin Cieślak</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <!-- Title Bar -->
+
+  <!-- Title bar -->
   <div id="title">Marcin Cieślak</div>
 
-  <!-- Header with flags -->
+  <!-- Header with burger and flags -->
   <header>
     <div class="flags">
-      <a href="index.html">
-        <img src="images/pl.png" alt="Polski" />
-      </a>
-      <a href="index_en.html">
-        <img src="images/uk.png" alt="English" />
-      </a>
+      <a href="index.html"><img src="pl_flag.png" alt="PL"></a>
+      <a href="index_en.html"><img src="uk_flag.png" alt="EN"></a>
     </div>
-
-    <!-- Burger Menu -->
     <nav class="burger-menu">
-      <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">
+        <i class="fas fa-bars"></i>
+      </label>
       <ul class="menu">
-        <li><a href="#about">About me</a></li>
-        <li><a href="#cv">CV</a></li>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="cv_en.html">CV</a></li>
         <li><a href="#portfolio">Power BI Portfolio</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- About -->
-  <section id="about">
-    <h1>About me</h1>
+  <!-- About Me -->
+  <section id="about-me">
+    <h2>About Me</h2>
     <p>
-      I am a logistics professional with a growing passion for data analysis, 
-      Power BI, and SQL. I combine operational experience with analytical skills 
-      to discover insights and improve processes.
+      Hi! I’m Marcin Cieślak – a logistics specialist with a passion for data, analytics, and tools like Power BI and SQL. 
+      I enjoy turning complex processes into simple and clear solutions.
     </p>
   </section>
 
-  <!-- Skills in a row -->
-  <section id="skills">
-    <div class="skill"><i class="fas fa-comments"></i> Communication</div>
-    <div class="skill"><i class="fas fa-users"></i> Teamwork</div>
-    <div class="skill"><i class="fas fa-lightbulb"></i> Creativity</div>
+  <!-- Skills -->
+  <section>
+    <div class="skills-container">
+      <div class="skill">
+        <i class="fas fa-comments fa-2x"></i>
+        <h3>Communication</h3>
+        <p>I can clearly express ideas and effectively lead conversations within a team.</p>
+      </div>
+      <div class="skill">
+        <i class="fas fa-users fa-2x"></i>
+        <h3>Teamwork</h3>
+        <p>I build strong relationships and can work in a group towards a common goal.</p>
+      </div>
+      <div class="skill">
+        <i class="fas fa-lightbulb fa-2x"></i>
+        <h3>Creativity</h3>
+        <p>I find out-of-the-box solutions and enjoy combining different perspectives.</p>
+      </div>
+    </div>
   </section>
 
-  <!-- CV + Portfolio -->
-  <section id="actions">
-    <a href="cv_en.html" class="btn"><i class="fas fa-file-alt"></i> CV</a>
-    <a href="#portfolio" class="btn"><i class="fas fa-chart-bar"></i> Power BI Portfolio</a>
-  </section>
-
-  <!-- CV -->
-  <section id="cv">
-    <h1><i class="fas fa-file-alt"></i> CV</h1>
-    <p>
-      <a href="files/CV_Marcin_Cieslak_EN.pdf" target="_blank">📄 Download my CV</a>
-    </p>
-  </section>
-
-  <!-- Portfolio -->
-  <section id="portfolio">
-    <h1><i class="fas fa-chart-bar"></i> Power BI Portfolio</h1>
-    <p>
-      Explore my Power BI dashboards and projects, where I transform data into 
-      business insights.  
-      <a href="https://app.powerbi.com/" target="_blank">🔗 Visit my Power BI work</a>
-    </p>
+  <!-- CV and Portfolio -->
+  <section>
+    <div class="cv-portfolio-container">
+      <div class="cv-box">
+        <i class="fas fa-id-card fa-2x"></i>
+        <h3>CV</h3>
+        <a href="cv_en.html" class="btn">View CV</a>
+      </div>
+      <div class="portfolio-box" id="portfolio">
+        <i class="fas fa-chart-bar fa-2x"></i>
+        <h3>Power BI Portfolio</h3>
+        <a href="https://app.powerbi.com/" target="_blank" class="btn">View Portfolio</a>
+      </div>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>
-      <a href="mailto:kontakt@marcincieslak.pl">✉️ Send email</a> | 
-      <a href="https://www.linkedin.com/in/marcin-cieslak/" target="_blank">
-        <i class="fab fa-linkedin"></i> LinkedIn
-      </a>
+    <p>&copy; 2025 Marcin Cieślak | 
+      <a href="mailto:twojmail@example.com"><i class="fas fa-envelope"></i> Contact</a> |
+      <a href="https://www.linkedin.com/in/twoj-profil" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
     </p>
   </footer>
+
 </body>
 </html>
