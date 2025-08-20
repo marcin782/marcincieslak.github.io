@@ -1,69 +1,98 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV - Marcin Cieślak</title>
-  
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Pasek tytułu -->
-  <div id="title">Marcin Cieślak</div>
 
-  <!-- Header -->
-  <header>
-    <div class="flags">
-      <a href="index.html"><img src="images/pl.png" alt="Polski" /></a>
-      <a href="index_en.html"><img src="images/uk.png" alt="English" /></a>
-    </div>
+  <div class="cv-container">
 
-    <!-- Burger menu -->
-    <nav class="burger-menu">
-      <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
-      <ul class="menu">
-        <li><a href="index.html#about">O mnie</a></li>
-        <li><a href="cv.html">CV</a></li>
-        <li><a href="index.html#portfolio">Portfolio Power BI</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Lewa kolumna -->
+    <aside class="cv-left">
+      <img src="photo.jpg" alt="Zdjęcie" class="cv-photo">
+      <h1>Marcin Cieślak</h1>
+      <h2>Logistyk | Analityk Danych</h2>
 
-  <!-- CV treść -->
-  <main class="cv-content">
-    <section>
-      <h2>Doświadczenie zawodowe</h2>
-      <p>Logistyk z doświadczeniem w analizie procesów i usprawnianiu łańcucha dostaw.</p>
-    </section>
+      <section class="contact">
+        <h3>Kontakt</h3>
+        <p><b>Telefon:</b> +48 600 000 000</p>
+        <p><b>Email:</b> marcin@example.com</p>
+        <p><b>LinkedIn:</b> linkedin.com/in/marcin-cieslak</p>
+      </section>
 
-    <section>
-      <h2>Umiejętności</h2>
-      <ul>
-        <li>SQL i bazy danych</li>
-        <li>Power BI – modelowanie danych i wizualizacje</li>
-        <li>Analiza procesów logistycznych</li>
-      </ul>
-    </section>
+      <section class="skills">
+        <h3>Umiejętności</h3>
+        <ul>
+          <li>Power BI</li>
+          <li>SQL</li>
+          <li>Excel (zaawansowany)</li>
+          <li>Analiza procesów</li>
+          <li>Komunikatywność</li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>Wykształcenie</h2>
-      <p>Wyższe wykształcenie logistyczne.</p>
-    </section>
-  </main>
+      <section class="interests">
+        <h3>Zainteresowania</h3>
+        <ul>
+          <li>Analiza danych</li>
+          <li>Nowe technologie AI</li>
+          <li>Sport i podróże</li>
+        </ul>
+      </section>
+    </aside>
 
-  <!-- Footer -->
-  <footer>
-    <p>
-      <a href="mailto:kontakt@marcincieslak.pl">✉️ Wyślij e-mail</a> | 
-      <a href="https://www.linkedin.com/in/marcin-cieslak/" target="_blank">
-        <i class="fab fa-linkedin"></i> LinkedIn
-      </a>
-    </p>
-  </footer>
+    <!-- Prawa kolumna -->
+    <main class="cv-right">
+
+      <section class="about">
+        <h3>O mnie</h3>
+        <p>
+          Jestem logistykem z doświadczeniem w analizie procesów i pasją do pracy z danymi. 
+          Specjalizuję się w tworzeniu raportów i wizualizacji w Power BI oraz w pracy z bazami danych SQL. 
+          Potrafię łączyć kompetencje analityczne z praktycznym podejściem do optymalizacji procesów biznesowych. 
+          Moim celem jest dalszy rozwój w obszarze analizy danych i Business Intelligence.
+        </p>
+      </section>
+
+      <section class="experience">
+        <h3>Doświadczenie zawodowe</h3>
+        <div class="job">
+          <h4>Specjalista ds. logistyki – Firma X</h4>
+          <p><i>2020 – obecnie</i></p>
+          <ul>
+            <li>Analiza procesów magazynowych i transportowych</li>
+            <li>Wdrażanie usprawnień w obiegu dokumentów</li>
+            <li>Raportowanie w Excelu i Power BI</li>
+          </ul>
+        </div>
+        <div class="job">
+          <h4>Koordynator logistyki – Firma Y</h4>
+          <p><i>2017 – 2020</i></p>
+          <ul>
+            <li>Planowanie dostaw i transportu</li>
+            <li>Optymalizacja kosztów logistycznych</li>
+            <li>Współpraca z klientami i dostawcami</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="education">
+        <h3>Wykształcenie</h3>
+        <p><b>Logistyka – Politechnika X</b> (2013 – 2017)</p>
+      </section>
+
+      <section class="certificates">
+        <h3>Certyfikaty</h3>
+        <ul>
+          <li>Coursera – Data Modeling with Power BI: Advanced DAX Calculations (2025)</li>
+          <li>Santander Open Academy – Power BI (2025)</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
 </body>
 </html>
