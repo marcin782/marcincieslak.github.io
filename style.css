@@ -196,3 +196,42 @@ footer a {
 .contact a:hover {
   text-decoration: underline;
 }
+
+
+
+/* Skills in 3 columns */
+.skills-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 40px 0;
+}
+.skill {
+  flex: 1;
+  margin: 0 10px;
+}
+
+/* CV + Portfolio side by side */
+.cv-portfolio-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0;
+  text-align: center;
+}
+.cv-box, .portfolio-box {
+  flex: 1;
+  margin: 0 20px;
+}
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #f1c40f;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: #d4ac0d;
+}
