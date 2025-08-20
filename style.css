@@ -245,3 +245,11 @@ footer a {
 .btn:hover {
   background-color: #d4ac0d;
 }
+.cv-content section {
+  margin-bottom: 20px; /* mniejszy odstęp */
+  padding: 10px 0;
+}
+
+.cv-content h2 {
+  margin-bottom: 8px;
+}
