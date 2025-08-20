@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Marcin Cieślak</title>
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header with flags -->
+  <header>
+    <div class="flags">
+      <a href="index.html">
+        <img src="images/pl.png" alt="Polski" />
+      </a>
+      <a href="index_en.html">
+        <img src="images/uk.png" alt="English" />
+      </a>
+    </div>
+
+    <!-- Burger Menu -->
+    <nav class="burger-menu">
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <ul class="menu">
+        <li><a href="#about">About me</a></li>
+        <li><a href="#communication">Communication</a></li>
+        <li><a href="#teamwork">Teamwork</a></li>
+        <li><a href="#problemsolving">Problem Solving</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#portfolio">Power BI Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <h1>About me</h1>
+    <p>
+      I am a logistics professional with a growing passion for data analysis, 
+      Power BI, and SQL. I combine operational experience with analytical skills 
+      to discover insights and improve processes.
+    </p>
+  </section>
+
+  <!-- Communication -->
+  <section id="communication">
+    <h1><i class="fas fa-comments"></i> Communication</h1>
+    <p>
+      I can clearly and effectively communicate information – both within teams 
+      and when presenting analytical results. I adapt my communication style to 
+      the audience: from simple reports for managers to detailed explanations 
+      for technical specialists.
+    </p>
+  </section>
+
+  <!-- Teamwork -->
+  <section id="teamwork">
+    <h1><i class="fas fa-users"></i> Teamwork</h1>
+    <p>
+      Teamwork for me means more than just dividing tasks – it’s about working 
+      together towards common goals. I have experience coordinating projects 
+      between logistics, sales, and IT departments, always focusing on 
+      collaboration and knowledge-sharing.
+    </p>
+  </section>
+
+  <!-- Problem Solving -->
+  <section id="problemsolving">
+    <h1><i class="fas fa-lightbulb"></i> Problem Solving</h1>
+    <p>
+      I believe in understanding the problem first, and then finding the right 
+      solution. Using SQL and Power BI, I analyze data to uncover hidden 
+      dependencies and propose improvements that solve issues and optimize 
+      processes in the long run.
+    </p>
+  </section>
+
+  <!-- CV -->
+  <section id="cv">
+    <h1><i class="fas fa-file-alt"></i> CV</h1>
+    <p>
+      <a href="files/CV_Marcin_Cieslak.pdf" target="_blank">📄 Download my CV</a>
+    </p>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio">
+    <h1><i class="fas fa-chart-bar"></i> Power BI Portfolio</h1>
+    <p>
+      Explore my Power BI dashboards and projects, where I transform data into 
+      business insights.  
+      <a href="https://app.powerbi.com/" target="_blank">🔗 Visit my Power BI work</a>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      <a href="mailto:kontakt@marcincieslak.pl">✉️ Send email</a> | 
+      <a href="https://www.linkedin.com/in/marcin-cieslak/" target="_blank">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+    </p>
+  </footer>
+</body>
+</html>
