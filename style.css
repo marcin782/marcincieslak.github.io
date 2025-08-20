@@ -1,255 +1,123 @@
-#title {
-  background-color: #333;   /* ciemne tło */
-  color: #fff;              /* jasny napis */
-  text-align: center;       /* wyśrodkowany */
-  padding: 20px 0;          /* trochę odstępu */
-  font-size: 28px;
-  font-weight: bold;
-  width: 100%;              /* pełna szerokość */
-}
-
-/* Ogólne kolory i tło */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f9f6f1; /* jasny beż */
-  color: #333;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #222;
 }
 
-/* Flagi */
-.flags {
-  position: absolute;
-  top: 10px;
-  right: 15px;
+/* Pasek nagłówkowy */
+#title {
+  background: #d9c8aa;
+  color: #000;
+  text-align: center;
+  padding: 20px 0;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+/* Burger + header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #fff;
 }
 .flags img {
-  width: 28px;
-  height: auto;
-  margin-left: 10px;
+  width: 30px;
+  margin: 0 5px;
   cursor: pointer;
 }
-
-/* Burger menu */
 .burger-menu {
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  z-index: 1000;
+  position: relative;
 }
 .menu-icon {
-  font-size: 26px;
   cursor: pointer;
-  color: #444;
+  font-size: 1.5rem;
+  display: inline-block;
+}
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.menu li {
+  padding: 10px 20px;
+}
+.menu li a {
+  text-decoration: none;
+  color: #222;
 }
 #menu-toggle {
   display: none;
 }
-.menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  position: fixed;
-  left: -220px;
-  top: 0;
-  width: 200px;
-  height: 100%;
-  background: #fff7e6; /* jasny złoto-beżowy */
-  box-shadow: 2px 0 5px rgba(0,0,0,0.2);
-  transition: left 0.4s ease;
-  padding-top: 60px;
-}
 #menu-toggle:checked + .menu-icon + .menu {
-  left: 0;
-}
-.menu li {
-  margin: 15px 0;
-}
-.menu a {
   display: block;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: #444;
-  transition: background 0.3s, font-weight 0.3s;
-}
-.menu a:hover {
-  background: #f0d78c;
-  font-weight: bold;
 }
 
 /* Sekcje */
 section {
-  padding: 60px 20px;
-  margin: 20px auto;
-  max-width: 900px;
-  background: #fffaf0; /* delikatny beż */
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 30px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
-section h1 {
-  color: #b8860b; /* ciemnozłoty */
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-}
-section p {
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-/* Linki */
-a {
-  color: #996515; /* złoty-brąz */
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
-/* Footer */
-footer {
-  margin-top: auto;
-  background: #e6d8ad; /* jasny złoty */
-  padding: 15px;
+h1, h2, h3 {
   text-align: center;
 }
-footer a {
-  color: #333;
-  font-weight: bold;
-}
-/* Kontener CV */
-.cv-container {
-  max-width: 900px;
-  margin: 100px auto 60px auto;
-  padding: 20px;
-  background: #fffef9;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
 
-/* Header CV */
-.cv-header {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  margin-bottom: 30px;
-}
-.cv-photo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #d4af37; /* złote obramowanie */
-}
-.cv-summary h1 {
-  margin: 0;
-  color: #333;
-}
-.cv-summary p {
-  color: #555;
-}
-
-/* Sekcje */
-.cv-section {
-  margin-bottom: 30px;
-}
-.cv-section h2 {
-  color: #d4af37;
-  border-bottom: 2px solid #d4af37;
-  padding-bottom: 5px;
-  margin-bottom: 15px;
-}
-
-/* Umiejętności */
-.skills {
-  list-style: none;
-  padding: 0;
-}
-.skills li {
-  margin-bottom: 10px;
-}
-.skill-bar {
-  display: inline-block;
-  background: #ddd;
-  width: 60%;
-  height: 8px;
-  border-radius: 5px;
-  margin-left: 10px;
-  vertical-align: middle;
-}
-.skill-bar span {
-  display: block;
-  background: #d4af37;
-  height: 100%;
-  border-radius: 5px;
-}
-
-/* Timeline */
-.timeline .job {
-  margin-bottom: 15px;
-}
-.timeline .job h3 {
-  margin: 0;
-  color: #333;
-}
-.timeline .job span {
-  font-size: 0.9em;
-  color: #888;
-}
-
-/* Kontakt */
-.contact a {
-  color: #d4af37;
-  text-decoration: none;
-}
-.contact a:hover {
-  text-decoration: underline;
-}
-
-
-
-/* Skills in 3 columns */
-.skills-container {
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  margin: 40px 0;
-}
-.skill {
-  flex: 1;
-  margin: 0 10px;
-}
-
-/* CV + Portfolio side by side */
+/* Kwadraty (umiejętności + CV/Portfolio) */
+.skills-container,
 .cv-portfolio-container {
   display: flex;
-  justify-content: space-around;
-  margin: 40px 0;
-  text-align: center;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.cv-box, .portfolio-box {
+.skill, .cv-box, .portfolio-box {
   flex: 1;
-  margin: 0 20px;
+  min-width: 260px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+.skill:hover, .cv-box:hover, .portfolio-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Przyciski */
 .btn {
   display: inline-block;
   margin-top: 10px;
-  padding: 10px 15px;
-  background-color: #f1c40f;
+  padding: 8px 16px;
+  background: #d9c8aa;
   color: #000;
+  border-radius: 4px;
   text-decoration: none;
-  border-radius: 5px;
   font-weight: bold;
 }
-.btn:hover {
-  background-color: #d4ac0d;
-}
-.cv-content section {
-  margin-bottom: 20px; /* mniejszy odstęp */
-  padding: 10px 0;
-}
 
-.cv-content h2 {
-  margin-bottom: 8px;
+/* Stopka */
+footer {
+  background: #d9c8aa;
+  color: #000;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+}
+footer a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
 }
