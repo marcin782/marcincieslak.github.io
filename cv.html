@@ -1,106 +1,69 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CV - Marcin Cieślak</title>
-  <link rel="stylesheet" href="style.css">
+  
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  
-  <!-- MENU BURGER takie samo jak na index -->
-  <nav class="sidebar" id="sidebar">
-    <button class="close-btn" onclick="toggleSidebar()">×</button>
-    <ul>
-      <li><a href="index.html#about">O mnie</a></li>
-      <li><a href="cv.html" class="active">CV</a></li>
-      <li><a href="portfolio.html">Portfolio Power BI</a></li>
-    </ul>
-  </nav>
-  <button class="burger" onclick="toggleSidebar()">☰</button>
-  
-  <!-- GŁÓWNY KONTENER -->
-  <div class="cv-container">
-    
-    <!-- Zdjęcie + Podsumowanie -->
-    <section class="cv-header">
-      <img src="images/moje_zdjecie.jpg" alt="Marcin Cieślak" class="cv-photo">
-      <div class="cv-summary">
-        <h1>Marcin Cieślak</h1>
-        <p><i class="fas fa-user"></i> Analityk danych z pasją do SQL, Power BI i sztucznej inteligencji. 
-        Łączę wiedzę techniczną z doświadczeniem biznesowym w logistyce, aby dostarczać praktyczne rozwiązania.</p>
-      </div>
-    </section>
-    
-    <!-- Umiejętności -->
-    <section class="cv-section">
-      <h2><i class="fas fa-code"></i> Umiejętności</h2>
-      <ul class="skills">
-        <li>SQL <span class="skill-bar"><span style="width:90%"></span></span></li>
-        <li>Power BI <span class="skill-bar"><span style="width:85%"></span></span></li>
-        <li>Excel <span class="skill-bar"><span style="width:80%"></span></span></li>
-        <li>Python <span class="skill-bar"><span style="width:70%"></span></span></li>
+  <!-- Pasek tytułu -->
+  <div id="title">Marcin Cieślak</div>
+
+  <!-- Header -->
+  <header>
+    <div class="flags">
+      <a href="index.html"><img src="images/pl.png" alt="Polski" /></a>
+      <a href="index_en.html"><img src="images/uk.png" alt="English" /></a>
+    </div>
+
+    <!-- Burger menu -->
+    <nav class="burger-menu">
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <ul class="menu">
+        <li><a href="index.html#about">O mnie</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="index.html#portfolio">Portfolio Power BI</a></li>
       </ul>
+    </nav>
+  </header>
+
+  <!-- CV treść -->
+  <main class="cv-content">
+    <section>
+      <h2>Doświadczenie zawodowe</h2>
+      <p>Logistyk z doświadczeniem w analizie procesów i usprawnianiu łańcucha dostaw.</p>
     </section>
-    
-    <!-- Ścieżka kariery -->
-    <section class="cv-section">
-      <h2><i class="fas fa-briefcase"></i> Ścieżka kariery</h2>
-      <div class="timeline">
-        <div class="job">
-          <h3>Logistyk - XYZ Logistics</h3>
-          <span>2020 - obecnie</span>
-          <p>Optymalizacja procesów dostaw i analiza danych operacyjnych.</p>
-        </div>
-        <div class="job">
-          <h3>Asystent ds. analiz - ABC Company</h3>
-          <span>2017 - 2020</span>
-          <p>Wspieranie działu finansowego poprzez raporty i modele w Excelu.</p>
-        </div>
-      </div>
-    </section>
-    
-    <!-- Edukacja -->
-    <section class="cv-section">
-      <h2><i class="fas fa-graduation-cap"></i> Edukacja</h2>
-      <p>Politechnika Poznańska – Logistyka, mgr inż. (2012–2017)</p>
-    </section>
-    
-    <!-- Certyfikaty -->
-    <section class="cv-section">
-      <h2><i class="fas fa-certificate"></i> Certyfikaty</h2>
+
+    <section>
+      <h2>Umiejętności</h2>
       <ul>
-        <li>Coursera – Data Modeling with Power BI: Advanced DAX (2025)</li>
-        <li>Santander Open Academy – Power BI (2025)</li>
+        <li>SQL i bazy danych</li>
+        <li>Power BI – modelowanie danych i wizualizacje</li>
+        <li>Analiza procesów logistycznych</li>
       </ul>
     </section>
-    
-    <!-- Zainteresowania -->
-    <section class="cv-section">
-      <h2><i class="fas fa-heart"></i> Zainteresowania</h2>
-      <p>AI, automatyzacja procesów, analiza sportowa, podróże.</p>
+
+    <section>
+      <h2>Wykształcenie</h2>
+      <p>Wyższe wykształcenie logistyczne.</p>
     </section>
-    
-    <!-- Kontakt -->
-    <section class="cv-section contact">
-      <h2><i class="fas fa-envelope"></i> Kontakt</h2>
-      <p>Email: <a href="mailto:kontakt@marcincieslak.pl">kontakt@marcincieslak.pl</a></p>
-      <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/marcin-cieslak/" target="_blank">LinkedIn</a></p>
-    </section>
-    
-  </div>
-  
-  <!-- FOOTER -->
+  </main>
+
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Marcin Cieślak – CV Online</p>
+    <p>
+      <a href="mailto:kontakt@marcincieslak.pl">✉️ Wyślij e-mail</a> | 
+      <a href="https://www.linkedin.com/in/marcin-cieslak/" target="_blank">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+    </p>
   </footer>
-  
-  <script>
-    function toggleSidebar() {
-      document.getElementById("sidebar").classList.toggle("active");
-    }
-  </script>
 </body>
 </html>
