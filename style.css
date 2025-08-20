@@ -1,3 +1,13 @@
+#title {
+  background-color: #333;   /* ciemne tło */
+  color: #fff;              /* jasny napis */
+  text-align: center;       /* wyśrodkowany */
+  padding: 20px 0;          /* trochę odstępu */
+  font-size: 28px;
+  font-weight: bold;
+  width: 100%;              /* pełna szerokość */
+}
+
 /* Ogólne kolory i tło */
 body {
   margin: 0;
