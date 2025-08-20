@@ -1,69 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV - Marcin Cieślak</title>
-  
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <!-- Title -->
+
+  <!-- Title bar -->
   <div id="title">Marcin Cieślak</div>
 
-  <!-- Header -->
+  <!-- Header with burger and flags -->
   <header>
     <div class="flags">
-      <a href="index.html"><img src="images/pl.png" alt="Polski" /></a>
-      <a href="index_en.html"><img src="images/uk.png" alt="English" /></a>
+      <a href="index.html"><img src="pl_flag.png" alt="PL"></a>
+      <a href="index_en.html"><img src="uk_flag.png" alt="EN"></a>
     </div>
-
-    <!-- Burger menu -->
     <nav class="burger-menu">
-      <input type="checkbox" id="menu-toggle" />
+      <input type="checkbox" id="menu-toggle">
       <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
       <ul class="menu">
-        <li><a href="index_en.html#about">About me</a></li>
+        <li><a href="index_en.html">Home</a></li>
         <li><a href="cv_en.html">CV</a></li>
         <li><a href="index_en.html#portfolio">Power BI Portfolio</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- CV content -->
-  <main class="cv-content">
-    <section>
-      <h2>Work Experience</h2>
-      <p>Logistics professional with experience in process analysis and supply chain improvement.</p>
-    </section>
+  <!-- CV layout -->
+  <main class="cv-container">
+    <!-- Left column -->
+    <aside class="cv-left">
+      <div class="photo">
+        <!-- You can add your picture here -->
+        <img src="images/profile.jpg" alt="Photo of Marcin" />
+      </div>
 
-    <section>
-      <h2>Skills</h2>
+      <section>
+        <h2><i class="fas fa-user"></i> Personal Info</h2>
+        <p><strong>Email:</strong> marcin.cieslak1994@wp.pl</p>
+        <p><strong>Phone:</strong> </p>
+      </section>
+
+      <section>
+        <h2><i class="fas fa-code"></i> Skills</h2>
+        <ul>
+          <li>Excel – advanced</li>
+          <li>SAP ERP / B1 – advanced</li>
+          <li>Tableau – intermediate</li>
+          <li>SQL – basic</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2><i class="fas fa-language"></i> Languages</h2>
+        <p>English – B2</p>
+      </section>
+
+      <section>
+        <h2><i class="fas fa-heart"></i> Interests</h2>
+        <ul>
+          <li>Data Analysis and BI</li>
+          <li>New Technologies</li>
+          <li>Logistics & Process Optimization</li>
+        </ul>
+      </section>
+    </aside>
+
+    <!-- Right column -->
+    <section class="cv-right">
+      <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
+
+      <div class="experience">
+        <h3>Logistics Manager – cleangang gmbh, Poznań</h3>
+        <span>11.2024 – present</span>
+        <ul>
+          <li>Created tools to improve inventory management efficiency.</li>
+          <li>Demand forecasting, strategic logistics planning.</li>
+          <li>Optimization of distribution and reverse logistics processes.</li>
+        </ul>
+      </div>
+
+      <div class="experience">
+        <h3>Supply Chain Specialist</h3>
+        <span>06.2023 – 10.2024</span>
+        <ul>
+          <li>Demand forecasting, reports and analysis in Excel.</li>
+          <li>Logistics process optimization, cross-department collaboration.</li>
+          <li>Key user of MRP module.</li>
+        </ul>
+      </div>
+
+      <div class="experience">
+        <h3>Supply Chain Development Specialist – Cosmo Group</h3>
+        <span>09.2021 – 06.2023</span>
+        <ul>
+          <li>Inventory planning, cooperation with logistics operators.</li>
+          <li>Prepared analyses in Excel and Tableau.</li>
+        </ul>
+      </div>
+
+      <div class="experience">
+        <h3>Logistics Specialist – CLAAS</h3>
+        <span>09.2018 – 08.2021</span>
+        <ul>
+          <li>Coordinated spare parts warehouse operations.</li>
+          <li>Inventory analysis and order management in SAP ERP.</li>
+        </ul>
+      </div>
+
+      <div class="experience">
+        <h3>Junior Logistics Specialist</h3>
+        <span>09.2017 – 08.2018</span>
+        <ul>
+          <li>Sales reports, order processing in SAP ERP.</li>
+        </ul>
+      </div>
+
+      <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+      <p><strong>UE Poznań – Postgraduate Studies</strong> (2019–2020) <br> Big Data, Advanced Analytical Techniques.</p>
+      <p><strong>UE Poznań – Master’s Degree</strong> (2017–2019) <br> International Logistics.</p>
+      <p><strong>UE Poznań – Bachelor’s Degree</strong> (2014–2017) <br> International Logistics.</p>
+
+      <h2><i class="fas fa-certificate"></i> Certificates</h2>
       <ul>
-        <li>SQL and databases</li>
-        <li>Power BI – data modeling and visualization</li>
-        <li>Logistics process analysis</li>
+        <li>Data Modeling with Power BI: Advanced DAX Calculations (Coursera, 2025)</li>
+        <li>Santander Open Academy – Power BI (2025)</li>
       </ul>
-    </section>
-
-    <section>
-      <h2>Education</h2>
-      <p>Higher education in logistics.</p>
     </section>
   </main>
 
   <!-- Footer -->
   <footer>
-    <p>
-      <a href="mailto:kontakt@marcincieslak.pl">✉️ Send email</a> | 
-      <a href="https://www.linkedin.com/in/marcin-cieslak/" target="_blank">
-        <i class="fab fa-linkedin"></i> LinkedIn
-      </a>
+    <p>&copy; 2025 Marcin Cieślak | 
+      <a href="mailto:marcin.cieslak1994@wp.pl"><i class="fas fa-envelope"></i> Contact</a> |
+      <a href="https://www.linkedin.com/in/marcin-cieslak/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
     </p>
   </footer>
+
 </body>
 </html>
